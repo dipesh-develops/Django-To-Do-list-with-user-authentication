@@ -7,13 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Login</h1>
+    <h1>Register</h1>
     <form method="POST" action="">
         {% csrf_token %}
         {{form.as_p}}
-        <input type="Submit" value="Login">
+        <input type="Submit" value="Register">
 
     </form>
-    <p>Don't hava an account?<a href="{% url 'register' %}">Register</a></p>
+    <p>Already hava an account?<a href="#">Login</a></p>
 </body>
 </html>
